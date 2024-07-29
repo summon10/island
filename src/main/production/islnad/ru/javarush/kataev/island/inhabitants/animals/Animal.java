@@ -1,5 +1,7 @@
 package inhabitants.animals;
 
-public abstract class Animal implements Eatable, Movable, Reproducable {
+import inhabitants.inhabitant;
+
+public class Animal extends inhabitant implements Eatable, Movable, Reproducable {
 
 }

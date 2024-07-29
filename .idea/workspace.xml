@@ -4,32 +4,42 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5f76085-8d49-44c2-8590-356da3c33e31" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/b/0ba1b9c7a4878802f938e331cc2d8a042087ec6b" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/0/b/0ba1b9c7a4878802f938e331cc2d8a042087ec6b" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/production/islnad/ru/javarush/kataev/island/consts.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/production/islnad/ru/javarush/kataev/island/inhabitants/animals/Animal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/production/islnad/ru/javarush/kataev/island/inhabitants/animals/Eatable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/production/islnad/ru/javarush/kataev/island/inhabitants/animals/Movable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/production/islnad/ru/javarush/kataev/island/inhabitants/animals/Reproducable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/production/islnad/ru/javarush/kataev/island/inhabitants/animals/herbivore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/production/islnad/ru/javarush/kataev/island/inhabitants/animals/predator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/production/islnad/ru/javarush/kataev/island/inhabitants/plants/plant.java" afterDir="false" />
+    <list default="true" id="f5f76085-8d49-44c2-8590-356da3c33e31" name="Changes" comment="structure">
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/9/09af8977d62a8836b081a6edf00f102dd98b1289" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/d/3d10c463768cfb1f20d7236beaf6705e88a04015" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/a/6a166968e416045f67f522ad89bb84a5d6564faf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/4/74ba3941e702fb90e59cc2c9adb8eef3fd11c31e" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/c/7cb337b6806e57266893c3a066939ce1fbb47e80" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/1/91dbedb77b247944f7f4751c361a9129565409ae" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/1/a198c795bbea66dd68742c5b084e66c20d250d17" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/0/9/09af8977d62a8836b081a6edf00f102dd98b1289" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/3/d/3d10c463768cfb1f20d7236beaf6705e88a04015" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/6/a/6a166968e416045f67f522ad89bb84a5d6564faf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/7/4/74ba3941e702fb90e59cc2c9adb8eef3fd11c31e" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/7/c/7cb337b6806e57266893c3a066939ce1fbb47e80" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/9/1/91dbedb77b247944f7f4751c361a9129565409ae" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/a/1/a198c795bbea66dd68742c5b084e66c20d250d17" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/production/islnad/ru/javarush/kataev/island/inhabitants/inhabitant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/production/islnad/ru/javarush/kataev/island/island/Field.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/production/islnad/ru/javarush/kataev/island/island/Location.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/production/islnad/ru/javarush/kataev/island/island/fieldConst.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/b/0ba1b9c7a4878802f938e331cc2d8a042087ec6b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/0/b/0ba1b9c7a4878802f938e331cc2d8a042087ec6b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/production/islnad/ru/javarush/kataev/island/consts.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/production/islnad/ru/javarush/kataev/island/inhabitants/animals/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/production/islnad/ru/javarush/kataev/island/inhabitants/animals/Animal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/production/islnad/ru/javarush/kataev/island/inhabitants/plants/plant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/production/islnad/ru/javarush/kataev/island/inhabitants/plants/Plant.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -43,28 +53,38 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2jt5B105fAdKt1Ntd0g63H59lyB" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "onboarding.tips.debug.path": "D:/Projects/island/island/src/main/java/org/example/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;D:/Projects/island/island/src/main/java/org/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
   }
-}]]></component>
+}</component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-4f524021" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -74,6 +94,19 @@
       <option name="presentableId" value="Default" />
       <updated>1722193393915</updated>
     </task>
+    <task id="LOCAL-00001" summary="structure">
+      <option name="closed" value="true" />
+      <created>1722197554292</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1722197554292</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="structure" />
   </component>
 </project>
