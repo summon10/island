@@ -1,10 +1,11 @@
 package island;
 
 
-import java.util.*;
+import inhabitants.Inhabitant;
 import inhabitants.animals.Animal;
-import inhabitants.inhabitant;
 import inhabitants.plants.Plant;
+
+import java.util.ArrayList;
 
 
 public class Location {
@@ -58,11 +59,11 @@ public class Location {
         }
 
 
-        public ArrayList<inhabitant> getInhabitants() {              // получить все формы жизни
-            ArrayList<inhabitant> inhabitants = new ArrayList<>();
-            inhabitants.addAll(animals);
-            inhabitants.addAll(plants);
-            return inhabitants;
+        public ArrayList<Inhabitant> getInhabitants() {              // получить все формы жизни
+            ArrayList<Inhabitant> Inhabitants = new ArrayList<>();
+            Inhabitants.addAll(animals);
+            Inhabitants.addAll(plants);
+            return Inhabitants;
         }
         public int getRow() {
             return row;

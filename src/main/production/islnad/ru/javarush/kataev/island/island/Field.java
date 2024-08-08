@@ -7,15 +7,13 @@ import java.util.*;
 public class Field {
 
         private Location[][] locations; // Двумерный массив состоящий из локаций(ячеек)
-      //  private final int numRows = 100; //default
-       // fieldConst fieldConst =
-        fieldConst.numRows
-        private final int numColumns = 20; //default
+        private final int numRows = 100; //default
+
+    private final int numColumns = 20; //default
         private static volatile Field instance;
 
         private Field() { // для создания одного обьекта
         }
-
 
         public static Field getInstance() { // получение экземпляра класса
             if (instance == null) {
@@ -47,7 +45,6 @@ public class Field {
             }
         }
 
-
         public synchronized Location getLocation(int row, int column) {// получение локации (ячейки) по заданным координатам
             return locations[row][column];
         }
@@ -58,24 +55,20 @@ public class Field {
             location.addAnimal(animal);
         }
 
-
         public void removeAnimal(Animal animal, int row, int column) {// удалить животного в указанную локацию
             Location location = getLocation(row, column);
             location.removeAnimal(animal);
         }
-
 
         public void addPlant(Plant plant, int row, int column) { // добавить растения в указанную локацию
             Location location = getLocation(row, column);
             location.addPlant(plant);
         }
 
-
         public void removePlant(Plant plant, int row, int column) { // удалить растения в указанную локацию
             Location location = getLocation(row, column);
             location.removePlant(plant);
         }
-
 
         public synchronized List<Animal> getAllAnimals() {  // получить список всех животных на острове
             ArrayList<Animal> allAnimals = new ArrayList<Animal>();
@@ -86,7 +79,6 @@ public class Field {
             }
             return allAnimals;
         }
-
 
         public ArrayList<Plant> getAllPlants() {                // получить список всех растений на острове
             ArrayList<Plant> allPlants = new ArrayList<Plant>();

@@ -1,6 +1,6 @@
 package inhabitants.plants;
 
-import inhabitants.inhabitant;
+import inhabitants.Inhabitant;
 
-public class Plant extends inhabitant {
+public class Plant extends Inhabitant {
 }
