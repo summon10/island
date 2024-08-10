@@ -1,4 +1,9 @@
 package inhabitants.animals.herbivores;
 
-public class deer {
+import inhabitants.animals.Animal;
+
+public class deer extends Animal {
+    public deer() {
+        super(4, 50, 300, 20, "deer");
+    }
 }

@@ -1,4 +1,9 @@
 package inhabitants.animals.predators;
 
-public class snake {
+import inhabitants.animals.Animal;
+
+public class snake extends Animal {
+    public snake() {
+        super(1, 3, 15, 30, "snake");
+    }
 }

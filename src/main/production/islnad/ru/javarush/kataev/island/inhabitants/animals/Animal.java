@@ -2,10 +2,13 @@ package inhabitants.animals;
 
 import inhabitants.Inhabitant;
 import island.Field;
+import island.Location;
 
+import java.lang.reflect.Constructor;
+import java.lang.reflect.InvocationTargetException;
 import java.util.Random;
 
-public class Animal extends Inhabitant implements Eatable, Movable, Reproducable {
+public class Animal extends Inhabitant implements Eatable, Movable, Reproducible {
     private final int step; // Скорость перемещения, не более чем, клеток за ход
     private final double maxHp; // Максимальное количество килограммов пищи нужно животному для полного насыщения
     private double hp; // Количество здоровья животного
@@ -32,6 +35,10 @@ public class Animal extends Inhabitant implements Eatable, Movable, Reproducable
     @Override
     public float eat(Inhabitant food) {
         return 0;
+    }
+
+    public String getName() {
+        return name;
     }
 
     @Override
@@ -79,11 +86,21 @@ public class Animal extends Inhabitant implements Eatable, Movable, Reproducable
     }
 
     @Override
-    public void reproduce(Inhabitant inhabitant) {
-        if (this.getClass() == inhabitant.getClass())
+    public void reproduce(Animal partner)
+    {
+
+        if (this.getName().equals(partner.getName()))
         {
-            Location location = IslandField.getInstance().getLocation(partner.getRow(), partner.getColumn());
-            IslandField.getInstance().addAnimal(new Fox(), location.getRow(), location.getColumn());
+            Location location = Field.getInstance().getLocation(partner.getRow(), partner.getColumn());
+
+            try {
+                Constructor<Animal> newAnimal = (Constructor<Animal>) Class.forName(partner.getName()).getConstructor();
+                Field.getInstance().addAnimal(newAnimal.newInstance(), location.getRow(), location.getColumn());
+            } catch (InstantiationException | ClassNotFoundException | IllegalAccessException |
+                     InvocationTargetException | NoSuchMethodException e) {
+                throw new RuntimeException(e);
+            }
         }
     }
+
 }

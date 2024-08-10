@@ -5,12 +5,8 @@
 Tsrc/main/production/islnad/ru/javarush/kataev/island/inhabitants/animals/Animal.java,a\1\a198c795bbea66dd68742c5b084e66c20d250d17
 …
 Usrc/main/production/islnad/ru/javarush/kataev/island/inhabitants/animals/Eatable.java,3\d\3d10c463768cfb1f20d7236beaf6705e88a04015
-‡
-Wsrc/main/production/islnad/ru/javarush/kataev/island/inhabitants/animals/herbivore.java,7\c\7cb337b6806e57266893c3a066939ce1fbb47e80
 …
 Usrc/main/production/islnad/ru/javarush/kataev/island/inhabitants/animals/Movable.java,7\4\74ba3941e702fb90e59cc2c9adb8eef3fd11c31e
-†
-Vsrc/main/production/islnad/ru/javarush/kataev/island/inhabitants/animals/predator.java,0\9\09af8977d62a8836b081a6edf00f102dd98b1289
 Š
 Zsrc/main/production/islnad/ru/javarush/kataev/island/inhabitants/animals/Reproducable.java,9\1\91dbedb77b247944f7f4751c361a9129565409ae
 ‚
@@ -86,3 +82,5 @@ _src/main/production/islnad/ru/javarush/kataev/island/inhabitants/animals/herbiv
 dsrc/main/production/islnad/ru/javarush/kataev/island/inhabitants/animals/herbivores/caterpillar.java,0\e\0eb36cc5542348a18dd2f9afbd4b30d69666c5ef
 €
 Psrc/main/production/islnad/ru/javarush/kataev/island/inhabitants/Inhabitant.java,2\c\2c60c3cf2c877b83feb0f094e8da04d5cc333268
+Š
+Zsrc/main/production/islnad/ru/javarush/kataev/island/inhabitants/animals/Reproducible.java,1\6\16597de3fe7be0ea82b9ca113b51a3429c8beed5
