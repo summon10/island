@@ -1,0 +1,16 @@
+
+¡
+java:S2293J"YReplace the type specification in this constructor call with the diamond operator ("<>").(±´È‰şÿÿÿÿ8ì¡’2J$b9f0a0c8-4849-4d82-be94-85927fcd547e
+œ
+java:S2293T"YReplace the type specification in this constructor call with the diamond operator ("<>").(äÑå˜8ì¡’2J$238e7d29-d60c-404e-bf3a-bfd16791e7be
+¸
+java:S1319S"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(¸µ›­üÿÿÿÿ8…µ¸¡’2J$24b67890-5640-43da-93be-6552c530be13
+d
+java:S1170
+"!Make this final field static too.(“—éù8¤ì¡’2J$5f4c49ca-2120-4651-b7f0-0557e3e19616
+i
+java:S1170"!Make this final field static too.(şëµÙùÿÿÿÿ8¤ì¡’2J$3f3e1e74-b228-4857-a99e-75d96208dbcb
+Ü
+java:S6548"˜A Singleton implementation was detected. Make sure the use of the Singleton pattern is required and the implementation is the right one for the context.(ºÿ÷‹8¦ì¡’2J$a55ba2f3-5904-40dd-856f-d2cb1e52f432
+š
+java:S3077"WUse a thread-safe type; adding "volatile" is not enough to make this field thread-safe.(Ê¿‘½8§ì¡’2J$4662360d-b74a-43ec-b2fa-0aed347fffc7

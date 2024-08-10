@@ -1,0 +1,12 @@
+
+›
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ğ‘ñ28úºŞ2J$09f91271-3810-4881-b681-611dd4d92360
+¡
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ø“™òÿÿÿÿÿ8ûºŞ2J$923163fe-8335-46d4-a735-e5d83198cb7b
+²
+java:S13194"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(æ¹¾C8ûºŞ2J$bab4dccc-5e1c-44c8-8177-bb3e0a7baca9
+¸
+java:S13199"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(üŸ“ÿÿÿÿÿ8üºŞ2J$131ea39b-d4e1-47f8-a1f8-ccabe61e45ad
+²
+java:S1319>"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ï«½d8üºŞ2J$84522cf3-5b73-4b8c-bce7-a2f700e75ff4
+˜	java:S117?"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ë××°üÿÿÿÿ8‘×“2J$d41ac0f2-0ab3-4aba-90e7-3e67ee28f8db
