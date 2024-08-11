@@ -7,4 +7,9 @@ public class horse extends Animal {
         super(4, 60, 400, 1000, "horse");
     }
 
+    @Override
+    public float getChanceToEat(String wantToBeEaten) {
+        if (wantToBeEaten.equals("plant")) return 100;
+        else return 0;
+    }
 }

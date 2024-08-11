@@ -6,9 +6,9 @@ import island.Location;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
-import java.util.Random;
+import java.util.*;
 
-public class Animal extends Inhabitant implements Eatable, Movable, Reproducible {
+public abstract class Animal extends Inhabitant implements Eatable, Movable, Reproducible {
     private final int step; // Скорость перемещения, не более чем, клеток за ход
     private final double maxHp; // Максимальное количество килограммов пищи нужно животному для полного насыщения
     private double hp; // Количество здоровья животного
@@ -27,10 +27,7 @@ public class Animal extends Inhabitant implements Eatable, Movable, Reproducible
 
     }
 
-    @Override
-    public float getChanceToEat(String nameWantToEat, String wantToBeEaten) {
-        return 0;
-    }
+
 
     @Override
     public float eat(Inhabitant food) {

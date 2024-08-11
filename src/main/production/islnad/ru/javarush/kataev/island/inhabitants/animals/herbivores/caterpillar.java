@@ -8,5 +8,10 @@ public class caterpillar extends Animal  {
         super(0, 0, 0.01, 1000, "caterpillar");
     }
 
+    @Override
+    public float getChanceToEat(String wantToBeEaten) {
+        if (wantToBeEaten.equals("plant")) return 100;
+        else return 0;
     }
+}
 

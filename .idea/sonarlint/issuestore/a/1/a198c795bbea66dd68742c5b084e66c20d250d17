@@ -1,14 +1,16 @@
 
-	java:S112e"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8¼äëï“2J$74b2e9ea-24cc-41a7-9c49-5cfd2e3078d7
+	java:S112b"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8¼äëï“2J$9340ace6-498d-46f8-9505-e070c1c6c52a
+|
+java:S5993"9Change the visibility of this constructor to "protected".(ª»ò8ş –”2J$2597dc38-7752-4bc3-a9e1-157307d54de0
 `
-java:S2119."Save and re-use this "Random".(¼İÅf8öïïì“2J$a056b3f6-4ae1-415f-b4e5-ccc2f4e9671e
-i	java:S1315""Add a default case to this switch.(Æóõµıÿÿÿÿ8øïïì“2J$0aad29d1-55b7-4226-bc96-e9fbae6ee947
-i	java:S131F""Add a default case to this switch.(Æóõµıÿÿÿÿ8ùïïì“2J$5b13a3d6-3029-4bd4-8b1d-5bd597114597
+java:S2119+"Save and re-use this "Random".(¼İÅf8öïïì“2J$15c4f4dd-6997-4cff-8f54-c953a36faae1
+i	java:S1312""Add a default case to this switch.(Æóõµıÿÿÿÿ8øïïì“2J$0ec51788-9187-423f-9c9f-58413da61c0e
+i	java:S131C""Add a default case to this switch.(Æóõµıÿÿÿÿ8ùïïì“2J$959bf4ef-6731-4e08-a16b-cc3c263c0c3f
 q
-java:S1068")Remove this unused "maxHp" private field.(Å¿ñøÿÿÿÿ8üïïì“2J$0c0404cf-609c-448d-bfc6-88dcd9c6c63b
+java:S1068")Remove this unused "maxHp" private field.(Å¿ñøÿÿÿÿ8üïïì“2J$bcc9abf5-64ab-4bfc-82b2-1061bb687ecb
 h
-java:S1068"&Remove this unused "hp" private field.(‚Éƒ 8ıïïì“2J$6b72ffaf-4d61-421a-a582-fff907f3e5e6
+java:S1068"&Remove this unused "hp" private field.(‚Éƒ 8ıïïì“2J$992a1e1e-d42e-404a-9ec1-2559981080da
 r
-java:S1068"*Remove this unused "weight" private field.(ÅÕíŞıÿÿÿÿ8ıïïì“2J$a54b60a4-0422-44ad-a00b-45dcd7906c71
+java:S1068"*Remove this unused "weight" private field.(ÅÕíŞıÿÿÿÿ8ıïïì“2J$234139c4-0d7d-47fb-95dd-dffc88c57167
 y
-java:S1068"1Remove this unused "maxPopulation" private field.(úÊ¹æÿÿÿÿÿ8ıïïì“2J$7a469b26-e291-462c-be03-68a4bf8c537e
+java:S1068"1Remove this unused "maxPopulation" private field.(úÊ¹æÿÿÿÿÿ8ô»ï—”2J$1fe8fca1-361d-4899-bfe8-0ad2a39a1483
