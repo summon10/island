@@ -1,16 +1,16 @@
 
 ¡
-java:S2293J"YReplace the type specification in this constructor call with the diamond operator ("<>").(±´È‰şÿÿÿÿ8ì¡’2J$38571448-b605-4af4-a2d6-09c21e94dc1e
+java:S2293J"YReplace the type specification in this constructor call with the diamond operator ("<>").(±´È‰şÿÿÿÿ8ì¡’2J$c050223f-cbb7-4de2-8cb8-a15a98361c08
 œ
-java:S2293T"YReplace the type specification in this constructor call with the diamond operator ("<>").(äÑå˜8ì¡’2J$ab76bacf-ff61-4e9b-93c0-527fc01b2876
+java:S2293T"YReplace the type specification in this constructor call with the diamond operator ("<>").(äÑå˜8ì¡’2J$04adbff8-edf9-4d2b-b3a6-c3ba2a61d1de
 ¸
-java:S1319S"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(¸µ›­üÿÿÿÿ8…µ¸¡’2J$b722ecf5-fb2b-4a4c-b2ee-81d6a22c2250
+java:S1319S"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(¸µ›­üÿÿÿÿ8…µ¸¡’2J$2fb2a44f-f158-4424-bca4-7ac55d912d4f
 d
 java:S1170
-"!Make this final field static too.(“—éù8¤ì¡’2J$0ae25727-c9c0-4d5b-8472-1f2fa8d952ac
+"!Make this final field static too.(“—éù8¤ì¡’2J$e33d4a49-b176-40b4-b1fc-47defe550aff
 i
-java:S1170"!Make this final field static too.(şëµÙùÿÿÿÿ8¤ì¡’2J$9e8174d5-7cbb-4b2c-b159-64377d026f6a
+java:S1170"!Make this final field static too.(şëµÙùÿÿÿÿ8¤ì¡’2J$47099901-bebc-406b-84e3-df112db401fd
 Ü
-java:S6548"˜A Singleton implementation was detected. Make sure the use of the Singleton pattern is required and the implementation is the right one for the context.(ºÿ÷‹8¦ì¡’2J$a11fa1fe-5230-47af-b547-0634822f4ae7
+java:S6548"˜A Singleton implementation was detected. Make sure the use of the Singleton pattern is required and the implementation is the right one for the context.(ºÿ÷‹8¦ì¡’2J$52713b42-f9c9-4d9d-8367-99aafc933525
 š
-java:S3077"WUse a thread-safe type; adding "volatile" is not enough to make this field thread-safe.(Ê¿‘½8§ì¡’2J$a3fd668b-2736-4201-8654-2990747d7578
+java:S3077"WUse a thread-safe type; adding "volatile" is not enough to make this field thread-safe.(Ê¿‘½8§ì¡’2J$1a5a27cd-984b-42c1-816d-4870985ac4a0

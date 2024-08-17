@@ -9,7 +9,7 @@ public class Field {
         private Location[][] locations; // Двумерный массив состоящий из локаций(ячеек)
         private final int numRows = 100; //default
 
-    private final int numColumns = 20; //default
+        private final int numColumns = 20; //default
         private static volatile Field instance;
 
         private Field() { // для создания одного обьекта

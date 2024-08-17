@@ -1,23 +1,35 @@
 package inhabitants.animals;
 
 import inhabitants.Inhabitant;
+import inhabitants.plants.Plant;
 import island.Field;
 import island.Location;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
-import java.util.*;
+import java.util.Random;
+import java.util.concurrent.ThreadLocalRandom;
 
 public abstract class Animal extends Inhabitant implements Eatable, Movable, Reproducible {
     private final int step; // Скорость перемещения, не более чем, клеток за ход
+
+    public double getMaxHp() {
+        return maxHp;
+    }
+
+    public double getHp() {
+        return hp;
+    }
+
+    public void setHp(double hp) {
+        this.hp = hp;
+    }
+
     private final double maxHp; // Максимальное количество килограммов пищи нужно животному для полного насыщения
     private double hp; // Количество здоровья животного
-    private final double weight; // Вес животного в кг
-    private final int maxPopulation; // Максимальное количество вида животного на 1 клетке
-    private final String name; // Имя животного
-
 
     public Animal(int step, double maxHp, double weight, int maxPopulation, String name) {
+        super(weight, name, maxPopulation);
         this.step = step;
         this.maxHp = maxHp;
         this.weight = weight;
@@ -27,19 +39,42 @@ public abstract class Animal extends Inhabitant implements Eatable, Movable, Rep
 
     }
 
+    @Override
+    public boolean eat(Inhabitant food) {
+        double chanceToEat;
+
+        boolean animalEatFood;
+
+
+        String foodName = food.getName();
+        chanceToEat = getChanceToEat(foodName);
+
+        animalEatFood = ThreadLocalRandom.current().nextDouble() < chanceToEat;
+        if (animalEatFood) {
+            setHp(Math.min((getHp() + food.getWeight()), getMaxHp())); // Показатель здоровья повышается после съедения
+            Location location = Field.getInstance().getLocation(food.getRow(), food.getColumn()); // Животное/растение удаляется из списка обиталей локации после съедения
+            if (food instanceof Animal animal) {
+                if (location.getAnimals().contains(animal)) {
+                    Field.getInstance().removeAnimal(animal, location.getRow(), location.getColumn());
+                } else {
+                    return false;
+                }
+            } else {
+                Plant plant = (Plant) food;
+                if (location.getPlants().size() > 0) {
+                    Field.getInstance().removePlant(plant, location.getRow(), location.getColumn());
+                } else {
+                    return false;
+                }
+            }
+        }
+        return animalEatFood;
+    }
+
 
 
     @Override
-    public float eat(Inhabitant food) {
-        return 0;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    @Override
-    public void move() {
+    public int move() {
         Random random = new Random();
         int randomCells = random.nextInt(this.step + 1);
         // Генерируем случайное направление (вверх, вниз, влево или вправо)
@@ -75,11 +110,13 @@ public abstract class Animal extends Inhabitant implements Eatable, Movable, Rep
                         newColumn += randomCells;
             }
         }
+
         Field.getInstance().removeAnimal(this, getRow(), getColumn());
         // Обновляем новые координаты
         setRow(newRow);
         setColumn(newColumn);
        Field.getInstance().addAnimal(this, newRow, newColumn);
+       return direction;
     }
 
     @Override
@@ -100,4 +137,7 @@ public abstract class Animal extends Inhabitant implements Eatable, Movable, Rep
         }
     }
 
+    public int getStep() {
+        return step;
+    }
 }

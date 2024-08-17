@@ -4,54 +4,36 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f5f76085-8d49-44c2-8590-356da3c33e31" name="Changes" comment="added constructor animals&#10;reproduce implementation">
+    <list default="true" id="f5f76085-8d49-44c2-8590-356da3c33e31" name="Changes" comment="chances to be eaten or eat added">
+      <change afterPath="$PROJECT_DIR$/src/main/production/islnad/ru/javarush/kataev/island/live/Round.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/production/islnad/ru/javarush/kataev/island/live/tasks/EatingTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/production/islnad/ru/javarush/kataev/island/live/tasks/HeathDecreaseTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/production/islnad/ru/javarush/kataev/island/live/tasks/MoveTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/production/islnad/ru/javarush/kataev/island/live/tasks/PlantGrowthTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/production/islnad/ru/javarush/kataev/island/live/tasks/ReproducingTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/production/islnad/ru/javarush/kataev/island/live/tasks/StatTask.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/9/09e59a27fb22b0bb4320695133e33b610a746ed9" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/9/09e59a27fb22b0bb4320695133e33b610a746ed9" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/e/0eb36cc5542348a18dd2f9afbd4b30d69666c5ef" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/e/0eb36cc5542348a18dd2f9afbd4b30d69666c5ef" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/4/1491cb58ffb3e70cafcb26201fc21df26f6aad67" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/4/1491cb58ffb3e70cafcb26201fc21df26f6aad67" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/a/1a9685f9f9ec65622c83deaf3520a38b380bc7a0" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/a/1a9685f9f9ec65622c83deaf3520a38b380bc7a0" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/3/33cfc89232bc022a726e6bc8882497a94d0e7712" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/3/33cfc89232bc022a726e6bc8882497a94d0e7712" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/b/3b4ce5633371f661870dfeb5d9b6288a1e0d78ea" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/b/3b4ce5633371f661870dfeb5d9b6288a1e0d78ea" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/d/3d10c463768cfb1f20d7236beaf6705e88a04015" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/d/3d10c463768cfb1f20d7236beaf6705e88a04015" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/7/479e2b517889f7666c1f36a6a3e15cf4c67840f2" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/7/479e2b517889f7666c1f36a6a3e15cf4c67840f2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/0/50147f47c8422d1d0d85c3f39f80d719d92eba75" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/2/5258f107f8ba98d11801e6a5794c97df4553bc7e" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/f/8fb03129bcb27cf6d7f79454f18de56026541271" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/f/8fb03129bcb27cf6d7f79454f18de56026541271" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/f/8fdb9b8df10b4a2ff46fb449c09927904e8aa697" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/f/8fdb9b8df10b4a2ff46fb449c09927904e8aa697" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/1/91dbedb77b247944f7f4751c361a9129565409ae" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/6/96c5e4f5a3f61e386641fe4671bc9ccf08afb1ec" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/6/96c5e4f5a3f61e386641fe4671bc9ccf08afb1ec" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/a/9a7d19fa641a060c9e3220937db882eb81402a9f" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/a/9a7d19fa641a060c9e3220937db882eb81402a9f" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/a/9ace21d803908a71b823ba051f4157ba34c447ba" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/a/9ace21d803908a71b823ba051f4157ba34c447ba" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/b/9bd1bd555f7e2bc56a8c0f98a460b98dd119f1fa" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/b/9bd1bd555f7e2bc56a8c0f98a460b98dd119f1fa" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/1/a198c795bbea66dd68742c5b084e66c20d250d17" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/1/a198c795bbea66dd68742c5b084e66c20d250d17" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/e/ae933f054c6365bc40528a687b1b33c8e20e6ef1" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/e/ae933f054c6365bc40528a687b1b33c8e20e6ef1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/9/b947e8c489f2b4ca42caacfaaeee1bd16abf029a" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/3/c38a6b54ed747a8771930f087bfc614a246e0924" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/3/c38a6b54ed747a8771930f087bfc614a246e0924" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/8/d82890608e3e25208081a0197bf18975969e1530" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/6/e6c94da2dddbd238f438cca615045d34dc0d2864" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/6/e6c94da2dddbd238f438cca615045d34dc0d2864" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/c/ec3c3c781de7707746e2f5e9535bc19fcc159735" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/c/ec3c3c781de7707746e2f5e9535bc19fcc159735" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/5/0/50147f47c8422d1d0d85c3f39f80d719d92eba75" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/9/1/91dbedb77b247944f7f4751c361a9129565409ae" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/d/8/d82890608e3e25208081a0197bf18975969e1530" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/5/2/5258f107f8ba98d11801e6a5794c97df4553bc7e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/b/9/b947e8c489f2b4ca42caacfaaeee1bd16abf029a" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/production/islnad/ru/javarush/kataev/island/inhabitants/Inhabitant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/production/islnad/ru/javarush/kataev/island/inhabitants/Inhabitant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/production/islnad/ru/javarush/kataev/island/inhabitants/animals/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/production/islnad/ru/javarush/kataev/island/inhabitants/animals/Animal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/production/islnad/ru/javarush/kataev/island/inhabitants/animals/Eatable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/production/islnad/ru/javarush/kataev/island/inhabitants/animals/Eatable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/production/islnad/ru/javarush/kataev/island/inhabitants/animals/Reproducible.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/production/islnad/ru/javarush/kataev/island/inhabitants/animals/Reproducible.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/production/islnad/ru/javarush/kataev/island/inhabitants/animals/herbivores/boar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/production/islnad/ru/javarush/kataev/island/inhabitants/animals/herbivores/boar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/production/islnad/ru/javarush/kataev/island/inhabitants/animals/herbivores/buffalo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/production/islnad/ru/javarush/kataev/island/inhabitants/animals/herbivores/buffalo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/production/islnad/ru/javarush/kataev/island/inhabitants/animals/herbivores/caterpillar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/production/islnad/ru/javarush/kataev/island/inhabitants/animals/herbivores/caterpillar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/production/islnad/ru/javarush/kataev/island/inhabitants/animals/herbivores/deer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/production/islnad/ru/javarush/kataev/island/inhabitants/animals/herbivores/deer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/production/islnad/ru/javarush/kataev/island/inhabitants/animals/herbivores/duck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/production/islnad/ru/javarush/kataev/island/inhabitants/animals/herbivores/duck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/production/islnad/ru/javarush/kataev/island/inhabitants/animals/herbivores/goat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/production/islnad/ru/javarush/kataev/island/inhabitants/animals/herbivores/goat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/production/islnad/ru/javarush/kataev/island/inhabitants/animals/herbivores/horse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/production/islnad/ru/javarush/kataev/island/inhabitants/animals/herbivores/horse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/production/islnad/ru/javarush/kataev/island/inhabitants/animals/herbivores/mouse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/production/islnad/ru/javarush/kataev/island/inhabitants/animals/herbivores/mouse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/production/islnad/ru/javarush/kataev/island/inhabitants/animals/herbivores/rabbit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/production/islnad/ru/javarush/kataev/island/inhabitants/animals/herbivores/rabbit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/production/islnad/ru/javarush/kataev/island/inhabitants/animals/herbivores/sheep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/production/islnad/ru/javarush/kataev/island/inhabitants/animals/herbivores/sheep.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/production/islnad/ru/javarush/kataev/island/inhabitants/animals/predators/bear.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/production/islnad/ru/javarush/kataev/island/inhabitants/animals/predators/bear.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/production/islnad/ru/javarush/kataev/island/inhabitants/animals/predators/eagle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/production/islnad/ru/javarush/kataev/island/inhabitants/animals/predators/eagle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/production/islnad/ru/javarush/kataev/island/inhabitants/animals/predators/fox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/production/islnad/ru/javarush/kataev/island/inhabitants/animals/predators/fox.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/production/islnad/ru/javarush/kataev/island/inhabitants/animals/predators/snake.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/production/islnad/ru/javarush/kataev/island/inhabitants/animals/predators/snake.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/production/islnad/ru/javarush/kataev/island/inhabitants/animals/predators/wolf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/production/islnad/ru/javarush/kataev/island/inhabitants/animals/predators/wolf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/production/islnad/ru/javarush/kataev/island/inhabitants/animals/Movable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/production/islnad/ru/javarush/kataev/island/inhabitants/animals/Movable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/production/islnad/ru/javarush/kataev/island/inhabitants/plants/Plant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/production/islnad/ru/javarush/kataev/island/inhabitants/plants/Plant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/production/islnad/ru/javarush/kataev/island/island/Field.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/production/islnad/ru/javarush/kataev/island/island/Field.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,7 +144,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723322977515</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="chances to be eaten or eat added">
+      <option name="closed" value="true" />
+      <created>1723406187915</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1723406187915</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -181,6 +171,7 @@
     <MESSAGE value="added animals, methods and some realization for animals" />
     <MESSAGE value="added animals, methods and some realization for animals&#10;to do fix reproduce" />
     <MESSAGE value="added constructor animals&#10;reproduce implementation" />
-    <option name="LAST_COMMIT_MESSAGE" value="added constructor animals&#10;reproduce implementation" />
+    <MESSAGE value="chances to be eaten or eat added" />
+    <option name="LAST_COMMIT_MESSAGE" value="chances to be eaten or eat added" />
   </component>
 </project>
