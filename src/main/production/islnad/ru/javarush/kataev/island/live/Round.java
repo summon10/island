@@ -23,15 +23,14 @@ public class Round {
     private final int countAnimals = 55;
     private static volatile Round instance;
     Random random = new Random();
+   public LiveTask liveTask = new LiveTask();
     public ScheduledExecutorService getExecutorService() {
         return executorService;
     }
 
     private volatile ScheduledExecutorService executorService;
 
-    public FutureTask<Integer> eatenAnimals = new FutureTask<>(new EatingTask());
-    public FutureTask<Integer> diedAnimals = new FutureTask<>(new HeathDecreaseTask());
-    public FutureTask<Integer> newAnimals = new FutureTask<>(new ReproducingTask());
+
 
     private Round() {
         startTime = System.currentTimeMillis();
@@ -57,23 +56,15 @@ public class Round {
 
     private void runIslandModel() {  // запустить остров
         executorService = Executors.newScheduledThreadPool(3);
-       // ExecutorService live = Executors.newFixedThreadPool(4);
+
 
         PlantGrowthTask plantGrowthTask = new PlantGrowthTask();
-        StatTask statisticsTask = new StatTask();
-        EatingTask eatingTask = new EatingTask();
-        HeathDecreaseTask heathDecreaseTask = new HeathDecreaseTask();
-        MoveTask moveTask = new MoveTask();
-        ReproducingTask reproducingTask = new ReproducingTask();
+        StatTask statTask = new StatTask();
 
-        live.submit(eatingTask);
-        live.submit(reproducingTask);
-        live.submit(heathDecreaseTask);
-        live.submit(moveTask);
 
-        executorService.scheduleAtFixedRate(, 1, 8, TimeUnit.SECONDS);
+        executorService.scheduleAtFixedRate(liveTask, 1, 8, TimeUnit.SECONDS);
         executorService.scheduleAtFixedRate(plantGrowthTask, 40, 30, TimeUnit.SECONDS);
-        executorService.scheduleAtFixedRate(statisticsTask, 0, 8, TimeUnit.SECONDS);
+        executorService.scheduleAtFixedRate(statTask, 0, 8, TimeUnit.SECONDS);
     }
 
     public void locateAnimals(int countPredators) {  // разместить животных на острове

@@ -2,18 +2,16 @@ package live.tasks;
 
 import live.Round;
 
-import java.util.concurrent.Callable;
-
-public class PlantGrowthTask implements Callable<Integer> {
+public class PlantGrowthTask implements Runnable {
     @Override
-    public Integer call() {
+    public void run() {
         int countPlants = 20;
         if (Round.getInstance().getTimeNow() >= 2) {
             Round.getInstance().placePlants(countPlants / 2);
         } else {
             Round.getInstance().placePlants(countPlants);
         }
-    return 1;
+
     }
 
 }

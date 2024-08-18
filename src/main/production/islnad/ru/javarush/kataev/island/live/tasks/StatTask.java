@@ -3,13 +3,8 @@ package live.tasks;
 import island.Field;
 import live.Round;
 
-import java.util.concurrent.ExecutionException;
-
     public class StatTask implements Runnable {
         private boolean isTimeOver;
-        private int babies;
-        private int animalsEaten;
-        private int animalsDiedByHungry;
         private int countAnimalsEnd;
         private int countPlants;
         private static int currentDay = 0;
@@ -20,21 +15,13 @@ import java.util.concurrent.ExecutionException;
 
       public StatTask() {
 
-
       }
-
         @Override
         public void run() {
             long timeNow = Round.getInstance().getTimeNow();
             isTimeOver = checkTime(timeNow);
             countAnimalsEnd = Field.getInstance().getAllAnimals().size(); // кол-во животных на острове
-            try {
-                animalsEaten =  Round.getInstance().eatenAnimals.get();// кол-во животных умерло
-                animalsDiedByHungry = Round.getInstance().diedAnimals.get();
-                babies = Round.getInstance().newAnimals.get();
-            } catch (InterruptedException | ExecutionException e) {
-                throw new RuntimeException(e);
-            }
+
 
             countPlants = Field.getInstance().getAllPlants().size();
             printStats();
@@ -43,14 +30,13 @@ import java.util.concurrent.ExecutionException;
                Round.getInstance().getExecutorService().shutdown();
                 System.exit(0);
             }
+
         }
 
 
         private boolean checkTime(long timeNow) {
             return timeNow / 60 >= 5;
         }
-
-
 
         private void printStats() {  //   вывод статистику моделирования
             if (isTimeOver) {
@@ -73,13 +59,13 @@ import java.util.concurrent.ExecutionException;
 
 
             System.out.print("Животных умерло от голода: ");
-            System.out.println(animalsDiedByHungry);
+            System.out.println(Round.getInstance().liveTask.getAnimalsDiedByHungry());
 
             System.out.print("Животных съедено: ");
-            System.out.println(animalsEaten);
+           System.out.println(Round.getInstance().liveTask.getAnimalsEaten());
 
             System.out.print("Детенышей родилось: ");
-            System.out.println(babies);
+            System.out.println(Round.getInstance().liveTask.getBabies());
 
 
             System.out.println();

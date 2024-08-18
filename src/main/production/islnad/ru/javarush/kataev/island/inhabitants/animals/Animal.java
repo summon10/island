@@ -126,9 +126,9 @@ public abstract class Animal extends Inhabitant implements Eatable, Movable, Rep
         if (this.getName().equals(partner.getName()))
         {
             Location location = Field.getInstance().getLocation(partner.getRow(), partner.getColumn());
-
+           // partner.getClass();
             try {
-                Constructor<Animal> newAnimal = (Constructor<Animal>) Class.forName(partner.getName()).getConstructor();
+                Constructor<Animal> newAnimal = (Constructor<Animal>) Class.forName(String.valueOf(partner.getClass().getName())).getConstructor();
                 Field.getInstance().addAnimal(newAnimal.newInstance(), location.getRow(), location.getColumn());
             } catch (InstantiationException | ClassNotFoundException | IllegalAccessException |
                      InvocationTargetException | NoSuchMethodException e) {

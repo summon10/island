@@ -10,7 +10,7 @@ import java.util.concurrent.Callable;
 
 public class HeathDecreaseTask implements Callable<Integer> {
     private double percentOfHpToDecrease = 15;
-    private final CountDownLatch latch;
+  //  private final CountDownLatch latch;
     private int animalsDiedByHungry;
 
 
@@ -21,7 +21,9 @@ public class HeathDecreaseTask implements Callable<Integer> {
     @Override
     public Integer call() {
         animalsDiedByHungry = 0;
+
         List<Animal> animals = Field.getInstance().getAllAnimals().stream().filter(c -> c.getMaxHp() > 0).toList();
+
         if (Round.getInstance().getTimeNow() / 60 >= 3) {
             percentOfHpToDecrease *= 2;
         }
@@ -35,7 +37,7 @@ public class HeathDecreaseTask implements Callable<Integer> {
                 animalsDiedByHungry++;
             }
         }
-        latch.countDown();
+      //  latch.countDown();
         return animalsDiedByHungry;
     }
 

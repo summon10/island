@@ -174,3 +174,7 @@ Msrc/main/production/islnad/ru/javarush/kataev/island/live/tasks/MoveTask.java,
 Tsrc/main/production/islnad/ru/javarush/kataev/island/live/tasks/PlantGrowthTask.java,9\f\9fb7cc5bf315ffc2279f8f663c3d390a84fe3d12
 }
 Msrc/main/production/islnad/ru/javarush/kataev/island/live/tasks/StatTask.java,7\e\7e6d5316a35158e36290cda444aaf6ced361476c
+}
+Msrc/main/production/islnad/ru/javarush/kataev/island/live/tasks/LiveTask.java,1\c\1c06bcf5838dec66df0e78ee5af8098295fa7591
+n
+>src/main/production/islnad/ru/javarush/kataev/island/Main.java,5\b\5b5a1fab0e1912e7acd8b566809b674a15e45f62

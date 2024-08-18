@@ -1,8 +1,11 @@
 
-	java:S112‡"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8œ€Í–2J$a7da66f5-fbeb-4265-adf8-8005414048f9
+	java:S112‡"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8—À¾¶–2J$1d5e0266-94af-467d-bc69-fcfd6279b470
 |
-java:S5993"9Change the visibility of this constructor to "protected".(ª»ò8¢€Í–2J$6af46d5c-1288-458c-9c5e-0bad23ea56d7
+java:S5993"9Change the visibility of this constructor to "protected".(ª»ò8˜Á¾¶–2J$63c16be6-33e1-4f44-b49b-41b181cbae4b
+†
+java:S1155@">Use isEmpty() to check whether the collection is empty or not.(ãôãâúÿÿÿÿ8Á¾¶–2J$5c38a979-b07d-4725-adaa-86bdc996c425
 `
-java:S2119N"Save and re-use this "Random".(¼İÅf8©€Í–2J$21556a2d-2304-4176-bb2a-a6606b22f76f
-i	java:S131U""Add a default case to this switch.(Æóõµıÿÿÿÿ8«€Í–2J$9b29b020-073f-4390-a4f5-9e863fb19e08
-i	java:S131f""Add a default case to this switch.(Æóõµıÿÿÿÿ8¬€Í–2J$6800c2ce-52f8-4245-98d0-afb00745c96a
+java:S2119N"Save and re-use this "Random".(¼İÅf8ŸÁ¾¶–2J$bbf27c16-c2be-4e28-8212-dab403c737bf
+i	java:S131U""Add a default case to this switch.(Æóõµıÿÿÿÿ8 Á¾¶–2J$4793ad49-90e9-49f4-95c3-c0b2fcb2ae44
+i	java:S131f""Add a default case to this switch.(Æóõµıÿÿÿÿ8¡Á¾¶–2J$f4e9d482-666d-496f-b93e-cf3c287b73ec
+„	java:S125"<This block of commented-out lines of code should be removed.(Ø®¥îúÿÿÿÿ8–’Á¶–2J$1edd18cd-0196-42dd-90e1-2a2d52da6569

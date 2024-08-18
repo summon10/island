@@ -49,6 +49,7 @@ public class EatingTask implements Callable<Integer> {
                                         }
                                         lifeFormsEaten.add(animalEaten);
                                         animalsEaten++;
+
                                     } else {
                                         Plant plant = (Plant) inhabitant;
                                         if (!location.getPlants().isEmpty()) {
@@ -64,15 +65,16 @@ public class EatingTask implements Callable<Integer> {
                 iterator.remove();
             }
         } else if (countAnimalsStart == 0) {
-            System.out.printf("На %d день существования острова все живое погибло! Вы проиграли.", StatisticsTask.getCurrentDay());
+            System.out.printf("На %d день существования острова все живое погибло! Вы проиграли.", StatTask.getCurrentDay());
             Round.getInstance().getExecutorService().shutdown();
             System.exit(0);
         } else {
-            System.out.printf("На %d день в живых остались только гусеницы!", StatisticsTask.getCurrentDay()); // так как они бесссмертные и не требуют пищи
+            System.out.printf("На %d день в живых остались только гусеницы!", StatTask.getCurrentDay());
            Round.getInstance().getExecutorService().shutdown();
             System.exit(0);
         }
      //   latch.countDown();
+
         return animalsEaten;
     }
 

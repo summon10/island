@@ -10,17 +10,19 @@ import java.util.concurrent.Callable;
 
 public class ReproducingTask implements Callable<Integer> {
     private int babies;
-    private final CountDownLatch latch;
+   // private final CountDownLatch latch;
 
-    public AnimalMultiplyTask(CountDownLatch latch) {
-        this.latch = latch;
-    }
+   // public AnimalMultiplyTask(CountDownLatch latch) {
+       // this.latch = latch;
+ //   }
 
     @Override
     public Integer call() {
         babies = 0;
         List<Animal> animals = Field.getInstance().getAllAnimals();
+        System.out.println(animals.toString());
         List<Animal> animalsMultiplied = new ArrayList<>();
+
         if (animals.size() > 0) {
             for (Animal currentAnimal : animals) {
                 if (!animalsMultiplied.contains(currentAnimal)) {
@@ -46,7 +48,7 @@ public class ReproducingTask implements Callable<Integer> {
                 }
             }
         }
-        latch.countDown();
+      //  latch.countDown();
         return babies;
     }
 }
