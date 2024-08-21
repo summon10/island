@@ -21,4 +21,8 @@ public class boar extends Animal   {
             };
         }
     }
+    public String getPicture ()
+    {
+       return "\uD83D\uDC17";
+    }
 }

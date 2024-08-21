@@ -9,11 +9,7 @@ import live.Round;
         private int countPlants;
         private static int currentDay = 0;
 
-    //      private final AnimalMultiplyTask animalMultiplyTask;
-    //    private final AnimalEatTask animalEatTask;
-      //  private final AnimalHpDecreaseTask animalHpDecreaseTask;
-
-      public StatTask() {
+        public StatTask() {
 
       }
         @Override

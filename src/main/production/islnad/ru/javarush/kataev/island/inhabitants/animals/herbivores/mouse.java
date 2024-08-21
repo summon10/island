@@ -13,4 +13,8 @@ public class mouse extends Animal {
             default -> 0;
         };
     }
+    public String getPicture ()
+    {
+        return "\uD83D\uDC01";
+    }
 }

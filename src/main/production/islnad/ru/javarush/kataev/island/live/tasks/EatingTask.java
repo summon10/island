@@ -1,7 +1,7 @@
 package live.tasks;
 
 import inhabitants.Inhabitant;
-import inhabitants.animals.Animal;
+import inhabitants.animals.*;
 import inhabitants.plants.Plant;
 import island.Field;
 import island.Location;
@@ -13,19 +13,14 @@ import java.util.List;
 import java.util.concurrent.Callable;
 
 public class EatingTask implements Callable<Integer> {
-   // private final CountDownLatch latch;
+
     private int animalsEaten;
-
-
- //   public EatingTask(CountDownLatch latch) {
-  //      this.latch = latch;
- //   }
 
     @Override
     public Integer call() {
         animalsEaten = 0;
         List<Animal> animals = Field.getInstance().getAllAnimals();
-        List<Inhabitant> lifeFormsEaten = new ArrayList<>();
+        List<Inhabitant> inhabitantsEaten = new ArrayList<>();
         int countAnimalsStart = animals.size();
 
         if (countAnimalsStart > 0 && animals.stream().filter(c -> !(c.getName().equals("Caterpillar"))).toList().size() > 0) {
@@ -39,15 +34,16 @@ public class EatingTask implements Callable<Integer> {
 
                     if (!locationInhabitants.isEmpty()) {
                         for (Inhabitant inhabitant : locationInhabitants) {
-                            if (currentAnimal.getChanceToEat(inhabitant.getName()) > 0 && !(lifeFormsEaten.contains(inhabitant))) {
-                                boolean isEaten = currentAnimal.eat(inhabitant);
+                            if (currentAnimal.getChanceToEat(inhabitant.getName()) > 0 && !(inhabitantsEaten.contains(inhabitant))) {
+                                //System.out.println(currentAnimal.getPicture() + " ate " + inhabitant.getPicture());
+                               boolean isEaten = currentAnimal.eat(inhabitant);
 
                                 if (isEaten) {
                                     if (inhabitant instanceof Animal animalEaten) {
                                         if (location.getAnimals().contains(animalEaten)) {
                                             Field.getInstance().removeAnimal(animalEaten, location.getRow(), location.getColumn());
                                         }
-                                        lifeFormsEaten.add(animalEaten);
+                                        inhabitantsEaten.add(animalEaten);
                                         animalsEaten++;
 
                                     } else {
@@ -73,7 +69,6 @@ public class EatingTask implements Callable<Integer> {
            Round.getInstance().getExecutorService().shutdown();
             System.exit(0);
         }
-     //   latch.countDown();
 
         return animalsEaten;
     }

@@ -1,8 +1,9 @@
 package live.tasks;
 
-import live.Round;
-
-import java.util.concurrent.*;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.FutureTask;
 
 public class LiveTask implements Runnable {
 
@@ -17,7 +18,6 @@ public class LiveTask implements Runnable {
        reproducingTask = new ReproducingTask();
        moveTask = new MoveTask();
     }
-
     public int getAnimalsEaten() {
         return animalsEaten;
     }
@@ -30,7 +30,6 @@ public class LiveTask implements Runnable {
         return babies;
     }
 
-
     private int animalsEaten;
     private int animalsDiedByHungry;
     private int babies;
@@ -40,10 +39,8 @@ public class LiveTask implements Runnable {
 
         ExecutorService live = Executors.newFixedThreadPool(4);
 
-        Round round = Round.getInstance();
 
-
-        FutureTask<Integer> eatenAnimals = new FutureTask<>(eatingTask);
+         FutureTask<Integer> eatenAnimals = new FutureTask<>(eatingTask);
          FutureTask<Integer> diedAnimals = new FutureTask<>(heathDecreaseTask);
          FutureTask<Integer> newAnimals = new FutureTask<>(reproducingTask);
          FutureTask<Integer> moveDirections = new FutureTask<>(moveTask);
@@ -56,13 +53,11 @@ public class LiveTask implements Runnable {
             animalsEaten = eatenAnimals.get();
            animalsDiedByHungry = diedAnimals.get();
            babies = newAnimals.get();
-            System.out.println(animalsEaten);
-            System.out.println(animalsDiedByHungry);
-            System.out.println(babies);
+
         } catch (InterruptedException | ExecutionException e) {
             e.printStackTrace();
         }
-        System.out.println();
+
 
         live.execute(moveDirections);
 

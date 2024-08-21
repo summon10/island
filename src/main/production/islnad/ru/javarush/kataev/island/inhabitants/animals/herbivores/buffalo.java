@@ -13,4 +13,9 @@ public class buffalo extends Animal {
         if (wantToBeEaten.equals("plant")) return 100;
         else return 0;
     }
+
+    public String getPicture ()
+    {
+        return "\uD83D\uDC03";
+    }
 }

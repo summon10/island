@@ -13,4 +13,8 @@ public class sheep extends Animal {
         else return 0;
 
     }
+    public String getPicture ()
+    {
+        return "\uD83D\uDC11";
+    }
 }

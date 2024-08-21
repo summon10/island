@@ -4,7 +4,7 @@ import inhabitants.animals.Animal;
 
 public class duck extends Animal {
     public duck() {
-        super(4, 0.15, 1, 200, "caterpillar");
+        super(4, 0.15, 1, 200, "duck");
     }
 
     @Override
@@ -14,5 +14,9 @@ public class duck extends Animal {
             case "plant" -> 1;
             default -> 0;
         };
+    }
+    public String getPicture ()
+    {
+        return "\uD83E\uDD86";
     }
 }

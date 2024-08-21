@@ -13,4 +13,8 @@ public class rabbit extends Animal {
         else return 0;
 
     }
+    public String getPicture ()
+    {
+        return "\uD83D\uDC07";
+    }
 }

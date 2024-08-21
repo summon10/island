@@ -10,4 +10,9 @@ public class Plant extends Inhabitant {
     public Plant() {
         super(1, "Plant", 200);
     }
+
+    public String getPicture ()
+    {
+        return "\uD83C\uDF3F";
+    }
 }

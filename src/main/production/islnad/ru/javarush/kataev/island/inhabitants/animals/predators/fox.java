@@ -17,4 +17,8 @@ public class fox extends Animal {
             default -> 0;
         };
     }
+    public String getPicture ()
+    {
+        return "\uD83E\uDD8A";
+    }
 }

@@ -17,4 +17,8 @@ public class snake extends Animal {
             default -> 0;
         };
     }
+    public String getPicture ()
+    {
+        return "\uD83D\uDC0D";
+    }
 }

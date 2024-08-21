@@ -17,10 +17,7 @@ import java.util.concurrent.*;
 
 public class Round {
     private final long startTime;
-  //  private final int countHerbivores = 35;
-    private final int countPlants = 40;
-    //private final int countPredators = 20;
-    private final int countAnimals = 55;
+
     private static volatile Round instance;
     Random random = new Random();
    public LiveTask liveTask = new LiveTask();
@@ -56,11 +53,8 @@ public class Round {
 
     private void runIslandModel() {  // запустить остров
         executorService = Executors.newScheduledThreadPool(3);
-
-
         PlantGrowthTask plantGrowthTask = new PlantGrowthTask();
         StatTask statTask = new StatTask();
-
 
         executorService.scheduleAtFixedRate(liveTask, 1, 8, TimeUnit.SECONDS);
         executorService.scheduleAtFixedRate(plantGrowthTask, 40, 30, TimeUnit.SECONDS);
@@ -112,8 +106,8 @@ public class Round {
             Animal randomAnimal = animals.get(randomIndex);
             try {
                 // создаем экземпляр животного через рефлексию
-                Animal newPredator = randomAnimal.getClass().getConstructor().newInstance();
-                animals.add(newPredator);
+                Animal newAnimal = randomAnimal.getClass().getConstructor().newInstance();
+                animals.add(newAnimal);
             } catch (InvocationTargetException | NoSuchMethodException | InstantiationException | IllegalAccessException e) {
                 e.printStackTrace();
                 throw new RuntimeException(e);

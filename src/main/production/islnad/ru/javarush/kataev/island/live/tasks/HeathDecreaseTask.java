@@ -10,14 +10,9 @@ import java.util.concurrent.Callable;
 
 public class HeathDecreaseTask implements Callable<Integer> {
     private double percentOfHpToDecrease = 15;
-  //  private final CountDownLatch latch;
+
     private int animalsDiedByHungry;
 
-
-  /*  public AnimalHpDecreaseTask(CountDownLatch latch) {
-        this.latch = latch;
-    }
-*/
     @Override
     public Integer call() {
         animalsDiedByHungry = 0;
@@ -37,7 +32,7 @@ public class HeathDecreaseTask implements Callable<Integer> {
                 animalsDiedByHungry++;
             }
         }
-      //  latch.countDown();
+
         return animalsDiedByHungry;
     }
 

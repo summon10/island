@@ -1,6 +1,6 @@
 package inhabitants;
 
-public class Inhabitant {
+public abstract class Inhabitant {
     private int row;
     protected double weight; // Вес животного в кг
     protected String name; // Имя животного
@@ -12,7 +12,7 @@ public class Inhabitant {
         this.name = name;
         this.maxPopulation = maxPopulation;
     }
-
+    public abstract String getPicture();
     public int getMaxPopulation() {
         return maxPopulation;
     }

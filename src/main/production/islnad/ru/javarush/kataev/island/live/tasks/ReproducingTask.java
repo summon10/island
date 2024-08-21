@@ -10,11 +10,6 @@ import java.util.concurrent.Callable;
 
 public class ReproducingTask implements Callable<Integer> {
     private int babies;
-   // private final CountDownLatch latch;
-
-   // public AnimalMultiplyTask(CountDownLatch latch) {
-       // this.latch = latch;
- //   }
 
     @Override
     public Integer call() {
@@ -48,7 +43,6 @@ public class ReproducingTask implements Callable<Integer> {
                 }
             }
         }
-      //  latch.countDown();
-        return babies;
+              return babies;
     }
 }

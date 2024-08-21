@@ -1,7 +1,6 @@
 package inhabitants.animals;
 
 import inhabitants.Inhabitant;
-import inhabitants.plants.Plant;
 import island.Field;
 import island.Location;
 
@@ -49,24 +48,10 @@ public abstract class Animal extends Inhabitant implements Eatable, Movable, Rep
         String foodName = food.getName();
         chanceToEat = getChanceToEat(foodName);
 
-        animalEatFood = ThreadLocalRandom.current().nextDouble() < chanceToEat;
+        animalEatFood = ThreadLocalRandom.current().nextFloat() < chanceToEat;
         if (animalEatFood) {
             setHp(Math.min((getHp() + food.getWeight()), getMaxHp())); // Показатель здоровья повышается после съедения
-            Location location = Field.getInstance().getLocation(food.getRow(), food.getColumn()); // Животное/растение удаляется из списка обиталей локации после съедения
-            if (food instanceof Animal animal) {
-                if (location.getAnimals().contains(animal)) {
-                    Field.getInstance().removeAnimal(animal, location.getRow(), location.getColumn());
-                } else {
-                    return false;
-                }
-            } else {
-                Plant plant = (Plant) food;
-                if (location.getPlants().size() > 0) {
-                    Field.getInstance().removePlant(plant, location.getRow(), location.getColumn());
-                } else {
-                    return false;
-                }
-            }
+
         }
         return animalEatFood;
     }
@@ -140,4 +125,6 @@ public abstract class Animal extends Inhabitant implements Eatable, Movable, Rep
     public int getStep() {
         return step;
     }
+
+
 }
