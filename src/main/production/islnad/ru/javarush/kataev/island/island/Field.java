@@ -7,9 +7,9 @@ import java.util.*;
 public class Field {
 
         private Location[][] locations; // Двумерный массив состоящий из локаций(ячеек)
-    private static final int numRows = 100; //default
+    private static final int numRows = 20; //default
 
-    private static final int numColumns = 20; //default
+    private static final int numColumns = 100; //default
         private static volatile Field instance;
 
         private Field() { // для создания одного обьекта
@@ -50,12 +50,12 @@ public class Field {
         }
 
 
-        public void addAnimal(Animal animal, int row, int column) { // добавить животного в указанную локацию
+        public synchronized void addAnimal(Animal animal, int row, int column) { // добавить животного в указанную локацию
             Location location = getLocation(row, column);
             location.addAnimal(animal);
         }
 
-        public void removeAnimal(Animal animal, int row, int column) {// удалить животного в указанную локацию
+        public synchronized void  removeAnimal(Animal animal, int row, int column) {// удалить животного в указанную локацию
             Location location = getLocation(row, column);
             location.removeAnimal(animal);
         }

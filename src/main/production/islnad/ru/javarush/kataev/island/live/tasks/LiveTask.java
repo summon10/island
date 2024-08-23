@@ -36,31 +36,58 @@ public class LiveTask implements Runnable {
 
     @Override
     public void run() {
-
-        ExecutorService live = Executors.newFixedThreadPool(4);
-
-
+         ExecutorService live = Executors.newFixedThreadPool(4);
          FutureTask<Integer> eatenAnimals = new FutureTask<>(eatingTask);
          FutureTask<Integer> diedAnimals = new FutureTask<>(heathDecreaseTask);
          FutureTask<Integer> newAnimals = new FutureTask<>(reproducingTask);
          FutureTask<Integer> moveDirections = new FutureTask<>(moveTask);
          live.execute(eatenAnimals);
-         live.execute(diedAnimals);
-         live.execute(newAnimals);
+         while (true) {
+             if (eatenAnimals.isDone()) {
+                 live.execute(newAnimals);
+                // System.out.println("new animals task");
+                 if (newAnimals.isDone()) {
+                     //System.out.println("die task");
+                     live.execute(diedAnimals);
+                    // System.out.println("die task");
+                     break;
+                 }
+             }
+         }
+        while (true) {
+            try {
+                if (eatenAnimals.isDone()  && newAnimals.isDone() && diedAnimals.isDone()) {
+                    animalsEaten = eatenAnimals.get();
 
+                    animalsDiedByHungry = diedAnimals.get();
 
-        try {
-            animalsEaten = eatenAnimals.get();
-           animalsDiedByHungry = diedAnimals.get();
-           babies = newAnimals.get();
+                    babies = newAnimals.get();
+                   break;
+                }
 
-        } catch (InterruptedException | ExecutionException e) {
-            e.printStackTrace();
+            } catch (InterruptedException | ExecutionException e) {
+                e.printStackTrace();
+            }
+
         }
-
 
         live.execute(moveDirections);
 
+        while (true) {
+            try {
+                if (moveDirections.isDone()) {
+                    moveDirections.get();
+
+                    break;
+                }
+
+            } catch (InterruptedException | ExecutionException e) {
+                e.printStackTrace();
+            }
+
+        }
+        }
+
 
     }
-}
+

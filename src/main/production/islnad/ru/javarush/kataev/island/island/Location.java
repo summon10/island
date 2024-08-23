@@ -24,7 +24,7 @@ public class Location {
         }
 
 
-        public void addAnimal(Animal animal) { // добавить животного в данное местоположение
+        public synchronized void addAnimal(Animal animal) { // добавить животного в данное местоположение
             animal.setRow(row);
             animal.setColumn(column);
 
@@ -32,7 +32,7 @@ public class Location {
         }
 
 
-        public void removeAnimal(Animal animal) { // удалить животное
+        public synchronized void removeAnimal(Animal animal) { // удалить животное
             animals.remove(animal);
         }
 

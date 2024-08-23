@@ -12,7 +12,7 @@ public abstract class Inhabitant {
         this.name = name;
         this.maxPopulation = maxPopulation;
     }
-    public abstract String getPicture();
+    public abstract  String getPicture();
     public int getMaxPopulation() {
         return maxPopulation;
     }

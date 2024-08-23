@@ -23,7 +23,7 @@ public class EatingTask implements Callable<Integer> {
         List<Inhabitant> inhabitantsEaten = new ArrayList<>();
         int countAnimalsStart = animals.size();
 
-        if (countAnimalsStart > 0 && animals.stream().filter(c -> !(c.getName().equals("Caterpillar"))).toList().size() > 0) {
+        if (countAnimalsStart > 0 && animals.stream().filter(c -> !(c.getName().equals("caterpillar"))).toList().size() > 0) {
             Iterator<Animal> iterator = animals.iterator();
 
             while (iterator.hasNext()) {
@@ -34,7 +34,7 @@ public class EatingTask implements Callable<Integer> {
 
                     if (!locationInhabitants.isEmpty()) {
                         for (Inhabitant inhabitant : locationInhabitants) {
-                            if (currentAnimal.getChanceToEat(inhabitant.getName()) > 0 && !(inhabitantsEaten.contains(inhabitant))) {
+                            if (inhabitant !=null && currentAnimal.getChanceToEat(inhabitant.getName()) > 0 && !(inhabitantsEaten.contains(inhabitant))) {
                                 //System.out.println(currentAnimal.getPicture() + " ate " + inhabitant.getPicture());
                                boolean isEaten = currentAnimal.eat(inhabitant);
 
@@ -44,7 +44,7 @@ public class EatingTask implements Callable<Integer> {
                                             Field.getInstance().removeAnimal(animalEaten, location.getRow(), location.getColumn());
                                         }
                                         inhabitantsEaten.add(animalEaten);
-                                        animalsEaten++;
+
 
                                     } else {
                                         Plant plant = (Plant) inhabitant;
@@ -53,6 +53,7 @@ public class EatingTask implements Callable<Integer> {
                                         }
                                     }
                                 }
+                                animalsEaten++;
                                 break;
                             }
                         }

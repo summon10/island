@@ -15,9 +15,7 @@ public class ReproducingTask implements Callable<Integer> {
     public Integer call() {
         babies = 0;
         List<Animal> animals = Field.getInstance().getAllAnimals();
-        System.out.println(animals.toString());
         List<Animal> animalsMultiplied = new ArrayList<>();
-
         if (animals.size() > 0) {
             for (Animal currentAnimal : animals) {
                 if (!animalsMultiplied.contains(currentAnimal)) {
@@ -27,7 +25,7 @@ public class ReproducingTask implements Callable<Integer> {
                     if (locationAnimals.size() > 1) {
                         locationAnimals = locationAnimals.stream().filter(c -> c.getName().equals(currentAnimal.getName()) && c != currentAnimal).toList();
 
-                        if (!locationAnimals.isEmpty()) {
+                        if (locationAnimals.size() > 0) {
                             Animal partner = locationAnimals.get(0);
 
                             if (!animalsMultiplied.contains(partner)) {
@@ -43,6 +41,9 @@ public class ReproducingTask implements Callable<Integer> {
                 }
             }
         }
-              return babies;
+        return babies;
     }
 }
+
+
+

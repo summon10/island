@@ -13,6 +13,7 @@ public class MoveTask implements Callable<Integer> {
         int direction=-1;
         for (Animal animal : animals) {
             direction = animal.move();
+
         }
         return direction;
     }

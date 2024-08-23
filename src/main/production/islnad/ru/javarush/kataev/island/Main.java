@@ -4,6 +4,6 @@ import live.Round;
 public class Main {
     public static void main(String[] args) {
         Field.getInstance().initializeLocations();
-        Round.getInstance().createAndRunIsland(10,100);
+        Round.getInstance().createAndRunIsland(10000,50000);
     }
 }

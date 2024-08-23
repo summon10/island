@@ -39,20 +39,17 @@ public abstract class Animal extends Inhabitant implements Eatable, Movable, Rep
     }
 
     @Override
-    public boolean eat(Inhabitant food) {
-        double chanceToEat;
-
+     public boolean eat(Inhabitant food) {
+        float chanceToEat;
         boolean animalEatFood;
-
-
+        Inhabitant inhabitant=null;
         String foodName = food.getName();
         chanceToEat = getChanceToEat(foodName);
-
         animalEatFood = ThreadLocalRandom.current().nextFloat() < chanceToEat;
         if (animalEatFood) {
             setHp(Math.min((getHp() + food.getWeight()), getMaxHp())); // Показатель здоровья повышается после съедения
-
         }
+
         return animalEatFood;
     }
 
@@ -107,19 +104,24 @@ public abstract class Animal extends Inhabitant implements Eatable, Movable, Rep
     @Override
     public void reproduce(Animal partner)
     {
+        Animal testAnimal=null;
 
         if (this.getName().equals(partner.getName()))
         {
             Location location = Field.getInstance().getLocation(partner.getRow(), partner.getColumn());
-           // partner.getClass();
             try {
                 Constructor<Animal> newAnimal = (Constructor<Animal>) Class.forName(String.valueOf(partner.getClass().getName())).getConstructor();
+
                 Field.getInstance().addAnimal(newAnimal.newInstance(), location.getRow(), location.getColumn());
+
             } catch (InstantiationException | ClassNotFoundException | IllegalAccessException |
                      InvocationTargetException | NoSuchMethodException e) {
                 throw new RuntimeException(e);
             }
+
         }
+
+
     }
 
     public int getStep() {

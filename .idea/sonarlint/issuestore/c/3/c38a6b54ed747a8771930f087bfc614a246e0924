@@ -1,14 +1,14 @@
 
 ¡
-java:S2293J"YReplace the type specification in this constructor call with the diamond operator ("<>").(±´È‰şÿÿÿÿ8ì¡’2J$253f363e-a810-41f5-8b48-30994da4f260
+java:S2293J"YReplace the type specification in this constructor call with the diamond operator ("<>").(±´È‰şÿÿÿÿ8È´÷û—2J$1a987920-a16b-4f88-aeb2-bf9f1ba960d4
 œ
-java:S2293T"YReplace the type specification in this constructor call with the diamond operator ("<>").(äÑå˜8ì¡’2J$bd466250-073e-4884-bef8-f89a06f5efc3
+java:S2293T"YReplace the type specification in this constructor call with the diamond operator ("<>").(äÑå˜8È´÷û—2J$1b4fd897-5d44-4c86-8add-eb908f3ea4d9
 ¸
-java:S1319S"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(¸µ›­üÿÿÿÿ8…µ¸¡’2J$4a03a734-6b42-4dbb-bc79-236084613384
-œ	java:S115
-"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(³Êµ8±´‘µ—2J$138a79fd-b98c-48c1-a3aa-ee67999be739
-¡	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ÉÙËûÿÿÿÿÿ8®Ò‘µ—2J$31c610f5-4b71-44a2-aaf0-e34d977cedc4
+java:S1319S"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(¸µ›­üÿÿÿÿ8É´÷û—2J$af42e8c8-e55f-46d8-af87-850695209500
+¡	java:S115
+"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(½Á©ıÿÿÿÿ8Ñ´÷û—2J$c44e9631-8008-4eff-a264-85c20105a3fe
+œ	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(®ÁÁö8Ñ´÷û—2J$1ce92773-c7c8-415e-bca2-0d0bb889cade
 Ü
-java:S6548"˜A Singleton implementation was detected. Make sure the use of the Singleton pattern is required and the implementation is the right one for the context.(ºÿ÷‹8¦ì¡’2J$0e5a3412-d29e-4b41-ba3b-639d3fad52dc
+java:S6548"˜A Singleton implementation was detected. Make sure the use of the Singleton pattern is required and the implementation is the right one for the context.(ºÿ÷‹8Ò´÷û—2J$aea187ff-c8d0-4da7-80ef-bb71be590241
 š
-java:S3077"WUse a thread-safe type; adding "volatile" is not enough to make this field thread-safe.(Ê¿‘½8§ì¡’2J$ad3396b9-65cd-4d97-9d51-096a0ed26c3a
+java:S3077"WUse a thread-safe type; adding "volatile" is not enough to make this field thread-safe.(Ê¿‘½8Ó´÷û—2J$ffabb9d3-423f-4d63-9f48-789349ab3f21

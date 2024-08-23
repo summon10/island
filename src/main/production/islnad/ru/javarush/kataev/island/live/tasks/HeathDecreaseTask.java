@@ -23,13 +23,15 @@ public class HeathDecreaseTask implements Callable<Integer> {
             percentOfHpToDecrease *= 2;
         }
         for (Animal animal : animals) {
-            double hpToDecrease = animal.getMaxHp() * percentOfHpToDecrease / 100.0;
-            if (animal.getHp() - hpToDecrease > 0) {
-                animal.setHp(animal.getHp() - hpToDecrease);
-            } else {
-                Location location = Field.getInstance().getLocation(animal.getRow(), animal.getColumn());
-                Field.getInstance().removeAnimal(animal, location.getRow(), location.getColumn());
-                animalsDiedByHungry++;
+            if (animal != null) {
+                double hpToDecrease = animal.getMaxHp() * percentOfHpToDecrease / 100.0;
+                if (animal.getHp() - hpToDecrease > 0) {
+                    animal.setHp(animal.getHp() - hpToDecrease);
+                } else {
+                    Location location = Field.getInstance().getLocation(animal.getRow(), animal.getColumn());
+                    Field.getInstance().removeAnimal(animal, location.getRow(), location.getColumn());
+                    animalsDiedByHungry++;
+                }
             }
         }
 

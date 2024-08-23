@@ -1,12 +1,12 @@
 
 ›
-java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ğ‘ñ28úºŞ2J$f419229e-1958-44b9-b6e7-2fa54e361e78
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ğ‘ñ28úºŞ2J$c0f8c952-2ce8-4eff-a4e1-80b9e022ed63
 ¡
-java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ø“™òÿÿÿÿÿ8ûºŞ2J$916ace0b-85d4-47f9-88b2-102ad0316572
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ø“™òÿÿÿÿÿ8ûºŞ2J$4761b747-bacd-4849-be63-08bd262623c2
 ²
-java:S13194"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(æ¹¾C8ûºŞ2J$cd94d18e-ea01-4b86-a2af-1f525cc24715
+java:S13194"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(æ¹¾C8ûºŞ2J$0b35da65-d21d-4df4-8746-1a4d36659133
 ¸
-java:S13199"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(üŸ“ÿÿÿÿÿ8üºŞ2J$c8852a44-e68f-40a1-8cc1-0af9e6641443
+java:S13199"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(üŸ“ÿÿÿÿÿ8üºŞ2J$d5e01880-5e17-47af-bfed-974c5a39bd50
 ²
-java:S1319>"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ï«½d8üºŞ2J$9279d2ae-0162-4859-9b2d-d452902053c6
-˜	java:S117?"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ë××°üÿÿÿÿ8‘×“2J$2e2fef0a-ecea-4d2e-9708-ffd3854ed543
+java:S1319>"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ï«½d8üºŞ2J$b8d8be51-2523-4f4a-bd9e-1a6c25b71487
+˜	java:S117?"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ë××°üÿÿÿÿ8‘×“2J$f0d29667-8d76-43d7-a4f2-8a1d98967cda

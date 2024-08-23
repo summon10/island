@@ -1,9 +1,12 @@
 
-	java:S112x"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8Ë·•´—2J$b37e15f0-9c87-4fe8-9cd0-f84e383ea41d
+	java:S112w"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8£ä÷ü—2J$63314a99-ba4c-4a04-a18d-9dd96be8c460
 |
-java:S5993"9Change the visibility of this constructor to "protected".(ª»ò8˜º•´—2J$60f62b15-5575-483a-9e61-00d5f010e4bb
+java:S5993"9Change the visibility of this constructor to "protected".(ª»ò8¢å÷ü—2J$c00f68a7-63f5-4944-83b4-149eb6ae8f00
+r
+java:S1481-"/Remove this unused "inhabitant" local variable.(¤³Ï±8¥å÷ü—2J$e8aeae0b-5e72-40ed-bb10-ab213cb441a5
 `
-java:S2119?"Save and re-use this "Random".(¼İÅf8…¼•´—2J$e75084a3-83b0-47a5-855f-1efc5901dbbe
-i	java:S131F""Add a default case to this switch.(Æóõµıÿÿÿÿ8ˆ¼•´—2J$5adee7a1-4d13-4074-961d-782bff7eb5a1
-i	java:S131W""Add a default case to this switch.(Æóõµıÿÿÿÿ8Š¼•´—2J$346ab831-08c3-430f-8593-bde5bc69e3cb
-ƒ	java:S125r"<This block of commented-out lines of code should be removed.(Ø®¥îúÿÿÿÿ8¼•´—2J$1a675434-e760-47ca-8de3-0e7e067fd679
+java:S2119<"Save and re-use this "Random".(¼İÅf8§å÷ü—2J$9adbec99-620f-4450-8518-a32f85567248
+i	java:S131C""Add a default case to this switch.(Æóõµıÿÿÿÿ8¨å÷ü—2J$90cbc0de-1efb-467e-9736-8f2685cdf5ad
+i	java:S131T""Add a default case to this switch.(Æóõµıÿÿÿÿ8©å÷ü—2J$cae7cfeb-67e0-485e-9ce1-0b00d3553b72
+r
+java:S1481k"/Remove this unused "testAnimal" local variable.(¸àˆ8µ½¨ı—2J$232d673e-4e16-4f40-95b1-9a11fb8711b6

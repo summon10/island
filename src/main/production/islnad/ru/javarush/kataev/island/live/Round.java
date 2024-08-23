@@ -56,9 +56,9 @@ public class Round {
         PlantGrowthTask plantGrowthTask = new PlantGrowthTask();
         StatTask statTask = new StatTask();
 
-        executorService.scheduleAtFixedRate(liveTask, 1, 8, TimeUnit.SECONDS);
-        executorService.scheduleAtFixedRate(plantGrowthTask, 40, 30, TimeUnit.SECONDS);
-        executorService.scheduleAtFixedRate(statTask, 0, 8, TimeUnit.SECONDS);
+        executorService.scheduleAtFixedRate(liveTask, 1, 4, TimeUnit.SECONDS);
+        executorService.scheduleAtFixedRate(plantGrowthTask, 10, 10, TimeUnit.SECONDS);
+        executorService.scheduleAtFixedRate(statTask, 0, 4, TimeUnit.SECONDS);
     }
 
     public void locateAnimals(int countPredators) {  // разместить животных на острове
